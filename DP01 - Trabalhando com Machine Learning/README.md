@@ -1,31 +1,29 @@
 <h1>
     <a href="https://www.dio.me/">
      <img align="center" width="60px" src="https://hermes.dio.me/lab_projects/badges/87d332d0-5198-4a2f-b159-38c8c2976954.png"></a>
-    <span> Trabalhando com Machine Learning</span>
+    <span> Trabalhando com Machine Learning na Prática no Azure ML</span>
 </h1>
 
 ## Criando modelo de previsão - Passo a passo
 
-Para trabalhar no machine learn é essencial que você possua um workspace e esta é a tarefa inicial, criar o seu workspace para assim poder criar o seu trabalho automatizado.
+Para utilizar o Azure Machine Learning, é necessário preparar um espaço de trabalho do Azure Machine Learning na sua subscrição do Azure. Depois, você poderá usar o estúdio Azure Machine Learning para trabalhar com os recursos do seu workspace.
 
-Depois que nosso worlspace estiver pronto temos que entrar no ML studio para criar um "novo trabalho de ML automatizado", seguindo o passo a passo da documentação do Learning para melhor entendimento e para que tudo dê certo:
+Depois que nosso workspace estiver pronto, entraremos no no estúdio Azure Machine Learning, e criaremos um novo trabalho de ML automatizado, seguindo o passo a passo da documentação:
+
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/01.png" width=""/> 
 
 ...
 
-## Vamos criar um aprendizado de maquina para a previsão de aluguel de bicicletas:
-<img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/02.png" width=""/> 
+## Vamos criar um novo trabalho de ML automatizado com as seguintes configurações:
+O nome do trabalho : mslearn-bike-automl , o tipo de tarefa é regressão e onome de ativo de dados é aluguel de bicicletas, a fonte de dados será arquivos da WEB, conforme as imagens abaixo, que monstram o passo a passpo da configuraçao de acordo com a documentação, mas essa configuração pode varias de acordo com o projeto.
 
-O tipo de tarefa é regressão e onome de ativo de dados e aluguel de bicicletas, com fonte de dados da WEB.
+
+<img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/02.png" width=""/>  
+
+
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/03.png" width=""/> 
-
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/04.png" width=""/> 
-
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/05.png" width=""/> 
-
-...
-
-Adocumentação do Learning é bem didática e traz todos os valores e configurações para que o trabalho automatizado seja criado:
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/07.png" width=""/> 
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/08.png" width=""/> 
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/09.png" width=""/> 
@@ -33,15 +31,11 @@ Adocumentação do Learning é bem didática e traz todos os valores e configura
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/11.png" width=""/> 
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/12.png" width=""/> 
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/13.png" width=""/> 
-
-...
-
-Chegando na opção "examinar" basta enviar o seu trabalho de treinamento:
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/14.png" width=""/> 
 
 ...
 
-Após envio seu trabalho irá passar pelo proxesso de configuração das execuções e após 15, podendo o tempo ser menor, estará concluído:
+Após envio seu trabalho irá passar pelo processo de configuração das execuções e após alguns minutos e se tudo estiver configurado corretamente, estará concluído:
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/15.png" width=""/> 
 
 <img align="right" src="https://raw.githubusercontent.com/alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/main/imagens/DP01%20-%20Machine%20Learning/16.png" width=""/> 
@@ -53,7 +47,7 @@ Pipeline com as etapas do processo de aprendizado e os testes realizados
 
 ## Teste do modelo
 
-Na página do modelo, cliquei na aba "Pontos de extremidade". Também é possível acessar pelo menu lateral em "Pontos de extremidade". Cliquei no ponto correspondente ao modelo gerado. Em seguida, acessei a aba "Testar".
+Na página do modelo, clique na aba "Pontos de extremidade". Também é possível acessar pelo menu lateral em "Pontos de extremidade". Clique no ponto correspondente ao modelo gerado. Em seguida, acesse a aba "Testar".
 
 Para o teste, utilizei o json abaixo:
 
