@@ -6,7 +6,7 @@
 
 # Autorização de Uso
 ### 1. Salve uma cópia e utilize os modelos para desenvolver suas respostas!
-<a href="https://github.com//alexklenio/DIO-Microsoft-Azure-AI-Fundamentals/fork">
+<a href="https://github.com//Luan-Brito89/Desafios-DIO-Microsoft-Azure-AI-Fundamentals/fork">
     <img alt="Folk" title="Fork Button" src="https://shields.io/badge/-DAR%20FORK-red.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
 
 
